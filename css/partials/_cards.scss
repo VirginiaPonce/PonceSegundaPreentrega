@@ -1,0 +1,72 @@
+.card {
+    background-color: $secondaryColor;
+    margin-left: 100px;
+    margin-top: 10px;
+
+    .card-body {
+        background-color: $secondaryColor;
+        border-radius: 8px;
+
+        .card-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: $linkColor;
+            background-color: $secondaryColor;
+        }
+
+        .card-subtitle {
+            color: $fontColor;
+            font-size: 20px;
+            opacity: 80%;
+            background-color: $secondaryColor;
+        }
+
+        .card-text {
+            color: $fontColor;
+            font-size: 20px;
+            background-color: $secondaryColor;
+        }
+
+        .btn {
+            background-color: $buttonColor;
+            color: $fontColor;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+    }
+}
+
+.card2 {
+    margin-left: 100px;
+    background-color: $secondaryColor;
+
+   .card2-body {
+    background-color: $secondaryColor;
+    color: $fontColor;
+    padding: 20px;
+    border-radius: 8px;
+
+        .card2-title {
+            color: $linkColor;
+            font-size: 28px;
+            font-weight: bold;
+            background-color: $secondaryColor;
+        }
+
+        .card2-subtitle {
+            color: $fontColor;
+            font-size: 20px;
+            opacity: 80%;
+            background-color: $secondaryColor;
+        } 
+
+        .card2-text {
+            background-color: $secondaryColor;
+            color: $fontColor;
+        }
+
+    }  
+
+}
+

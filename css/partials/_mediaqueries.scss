@@ -1,0 +1,76 @@
+@media (max-width: 360px) {
+    .titulo1{
+        font-size: 50px;
+        padding: 0px;
+    }
+
+    .subtitulo1{
+        font-size: 35px;
+        padding: 0px;
+    }
+    
+    .texto-inicio{
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-photo {
+        width: 300px;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .footer-titulo {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        font-size: 16px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+    .fa-solid {
+            font-size: 40px;
+    }
+
+    .title-container {
+        font-size: 25px;
+    }
+    
+    .title-number {
+        font-size: 20px;
+        margin-right:10px;
+    }
+    
+    .foto-mas-texto {
+        flex-direction: column;
+    }
+    
+    .marco {
+        width: 260px;
+        padding: 16px 16px;
+    }
+    
+    .texto-principal {
+        font-size: 18px;
+        text-align: left;
+        margin-top: 32px;
+    }
+    
+    .imagen-universidad {
+        width: 117px;
+        height: 117px;
+    }
+}

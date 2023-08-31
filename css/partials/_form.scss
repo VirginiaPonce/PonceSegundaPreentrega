@@ -1,0 +1,24 @@
+.form {
+    margin-left: 25%;
+
+    .form-label {
+        color: $fontColor;
+        font-size: 32px;
+        font-weight: normal;
+    }
+
+    .form-control {
+        color: #575757;
+        font-size: 28px;
+        font-weight: 500;
+        background-color: $secondaryColor;
+        max-width: 664px;
+    }
+
+    .option {
+        background-color: $linkColor;
+        color: $secondaryColor;
+        font-weight: 500;
+    }
+
+}

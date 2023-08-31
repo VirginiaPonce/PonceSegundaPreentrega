@@ -1,0 +1,32 @@
+.article-container {
+    margin: 0px 3% 0px 3%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .article {
+        width: 100%;
+        max-width: 550px;
+        padding: 2% 64px 2% 64px;
+        margin: 50px 8px 8px 80px;
+        background-color: $secondaryColor;
+        border-radius: 8px;
+
+        .article-title {
+        color: $linkColor;
+        font-weight: bold;
+        font-size: 32px;
+        }
+        
+        .article-text{
+            color: $fontColor;
+            font-size: 26px;
+            list-style-type: none;
+            padding: 0px;
+        }
+
+    }
+
+}
+
+
+

@@ -17,19 +17,14 @@
 <header>
     <nav>
         <ul class="menu"> 
-            <li class="menu-item"> <a href="../index.html">Inicio</li>    
+            <li class="menu-item item1"> <a href="../index.html">Inicio</li>    
             <li class="selected-item">Sobre mi</li>  
-            <li class="menu-item"><a href="./formacion-academica.html">Formación académica</a></li>    
-            <li class="menu-item"><a href="./experiencia-laboral.html">Experiencia laboral</a></li>    
-            <li class="menu-item"><a href="./mis-proyectos.html">Mis proyectos</a></li>    
-            <li class="menu-item"><a href="./contactame.html">Contactame</a></li>    
+            <li class="menu-item item2"><a href="./formacion-academica.html">Formación académica</a></li>    
+            <li class="menu-item item3"><a href="./experiencia-laboral.html">Experiencia laboral</a></li>    
+            <li class="menu-item item4"><a href="./mis-proyectos.html">Mis proyectos</a></li>    
+            <li class="menu-item item5"><a href="./contactame.html">Contactame</a></li>    
         </ul>
     </nav>
-
-    <div class="botones-idioma">
-        <span class="boton-idioma-ingles">EN</span>
-        <span class="boton-idioma-espanol">ES</span>
-    </div>
 </header>
 
 
@@ -41,36 +36,60 @@
 
     <section class="foto-mas-texto">
         <div>
-        <img class="marco" class="foto-selfie" src="../img/foto1.jpg">
+        <img class="foto-selfie" src="../img/foto sobre mi.png" alt="Foto retrato">
         </div>
 
         <div>
             <p class="texto-principal">
-            <span class="resaltado">Estudié </span>Artes Visuales en la Universidad Nacional de las Artes, en donde me sumergí en el mundo de las <span class="resaltado">bellas artes</span> y el <span class="resaltado">lenguaje visual.</span>
-            Luego sentí curiosidad por el mundo del Diseño Industrial, allí <span>descubrí el</span> increíble mundo del <span class="resaltado">Diseño UX.</span>
+            <span class="resaltado">Estudié </span>Artes Visuales en la Universidad Nacional de las Artes, en donde di mis primeros pasos en el mundo de las <span class="resaltado">bellas artes</span> y el <span class="resaltado">lenguaje visual.</span>
+            Luego sentí curiosidad por el Diseño Industrial, en donde <span>descubrí el</span> increíble mundo del <span class="resaltado">Diseño UX/UI.</span>
             Entonces comencé a formarme en esta profesión, que tanto me apasiona, de la mano de Coderhouse, para llevar a cabo <span class="resaltado">productos útiles, bellos y coherentes</span> con las necesidades de los usuarios.
             </p>
         </div>
     </section>
 
-    <section class="imagen-universidad-todas">
-        <img class="imagen-universidad" src="../img/logo una.png" alt="">
-        <img class="imagen-universidad" src="../img/logo uba.png" alt="">
-        <img class="imagen-universidad" src="../img/logo coder.png" alt="">
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/carrouselsobremi1.png" class="d-block w-100" alt="Logo Universidad Nacional de las Artes">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/carrouselsobremi2.png" class="d-block w-100" alt="Logo Universidad de Buenos Aires">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/carrouselsobremi3.png" class="d-block w-100" alt="Logo institución educativa online Coderhouse">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
     </section>
+
 </main>
 
-<footer>
-    <div class="footer-titulo">Estemos en contacto</div>
-
-    <div class="footer">   
-        <span class="footer-links"><i class="fa-solid fa-envelope fa-lg" style="color: #79ced3;"></i> Enviame un mail</span> 
-
-        <span class="footer-links"><i class="fa-brands fa-linkedin fa-lg" style="color: #79ced3;"></i><a href="https://www.linkedin.com/in/virginia-ponce-uxui" target="_blank">Agregame en LinkedIn</a></span> 
-
-        <span class="footer-links"><i class="fa-brands fa-square-behance fa-lg" style="color: #79ced3;"></i><a href="https://www.behance.net/virginiaponce" target="_blank"> Visita mi portfolio</a></span> 
-    </div> 
-</footer>
+    <footer class="footer">
+        <div class="footer-titulo">Estemos en contacto</div>
+    
+        <div class="footer-links-contenedor">   
+            <span class="footer-links"><i class="fa-solid fa-envelope fa-lg" style="color: #79ced3;"></i> <a href="#">Enviame un mail</a></span> 
+    
+            <span class="footer-links"><i class="fa-brands fa-linkedin fa-lg" style="color: #79ced3;"></i><a href="https://www.linkedin.com/in/virginia-ponce-uxui" target="_blank">Agregame en LinkedIn</a></span> 
+    
+            <span class="footer-links"><i class="fa-brands fa-square-behance fa-lg" style="color: #79ced3;"></i><a href="https://www.behance.net/virginiaponce" target="_blank"> Visita mi portfolio</a></span> 
+        </div> 
+  </footer>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 

@@ -8,11 +8,11 @@
     border: 20px 0px 0px 32px;
     list-style-type: none;
     font-size: 24px;
-    font-weight: bold;
-    color: $linkColor;
+    font-weight: normal;
+    color: $fontColor;
 
     a {
-        color: $linkColor;
+        color: $fontColor;
         text-decoration: none;
     }
 
@@ -24,48 +24,46 @@
         color: $linkColor;
         padding: 8px 8px;
         text-decoration: none;
-        -webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+    }    
 
-        @for $item from 1 through 5 {
-            .menu-item#{$item} {
-            animation-delay: $item*1s;
-            }   
-        }
+    .item1 {
+        -webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation-delay: .2s;
+    }
+
+    .item2 {
+        -webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation-delay: .3s;
+    }
+
+    .item3 {
+        -webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation-delay: .4s;
+    }
+
+    .item4 {
+        -webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation-delay: .5s;
+    }
+
+    .item5 {
+        -webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation-delay: .6s;
     }
 
     .selected-item {
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: solid 5px $linkColor;
-        } 
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: solid 4px $linkColor;
+        color: $linkColor;
+    } 
 
 }
-
-.botones-idioma {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-        .boton-idioma-ingles {
-            color: $buttonColor;
-            background-color: $secondaryColor;
-            padding: 5px;
-            font-weight: bold;
-            font-size: 1.5rem;
-            border-radius: 4px 0px 0px 4px;
-        }
-
-        .boton-idioma-espanol {
-            background-color: $buttonColor;
-            padding: 5px;
-            font-weight: bold;
-            font-size: 1.5rem;
-            border-radius: 0px 4px 4px 0px;
-            margin-right: 100px;
-        }
-
-    }  
-
 
 
  @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}

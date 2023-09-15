@@ -2,17 +2,9 @@ body {
     background-color: $mainColor;
 }
 
-.texto-inicio{
-    color: $fontColor;
-    font-size: 40px;
-    text-align: center;
-    padding: 0px 260px 200px;    
-    
-}
-
 .titulo1{
         color:$fontColor;
-        font-size: 100px;
+        font-size: 80px;
         font-weight: medium;
         text-align: center;
         padding: 35px 195px 32px;
@@ -29,10 +21,10 @@ body {
 
 .subtitulo1{
         color: $fontColor;
-        font-size: 70px;
+        font-size: 60px;
         font-weight: medium;
         text-align: center;
-        padding-bottom: 70px;
+        padding-bottom: 30px;
 
         .resaltado{
             color:$linkColor;
@@ -41,43 +33,98 @@ body {
             text-align: center;
     
         }
+}
 
-    }
-
-.gallery {
-    margin: 5px;
-    padding: 5px;
-    height: auto;
-    width: auto;
-    float: left;
+.texto-inicio{
+    color: $fontColor;
+    font-size: 35px;
     text-align: center;
-
-    .gallery-photo {
-        padding: 12px;
-        -webkit-animation:flip-horizontal-bottom .4s cubic-bezier(.455,.03,.515,.955) reverse both;animation:flip-horizontal-bottom .4s cubic-bezier(.455,.03,.515,.955) reverse both;
-    }
-
-}  
+    padding: 0px 260px 100px;    
+    
+}
 
 .icon-arrow {
-        -webkit-animation:bounce-bottom .9s both;animation:bounce-bottom .9s both;
         display: flex;
         justify-content: center;
-        margin-bottom: 200px;
+        margin-bottom: 100px;
+        -webkit-animation:bounce-top 1s both;animation:bounce-top 1.5s both;
+        animation-iteration-count: infinite;
 
     .index-arrow-icon {
-        font-size: 80px;
-
+        font-size: 50px;
     }
 
 }
 
- @-webkit-keyframes bounce-bottom{0%{-webkit-transform:translateY(45px);transform:translateY(45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(24px);transform:translateY(24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(12px);transform:translateY(12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(6px);transform:translateY(6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(4px);transform:translateY(4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-bottom{0%{-webkit-transform:translateY(45px);transform:translateY(45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(24px);transform:translateY(24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(12px);transform:translateY(12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(6px);transform:translateY(6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(4px);transform:translateY(4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
+.menu-grilla-contenedor {
+    width: 1240px;
+    height: 880px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 612px 612px;
+    grid-template-rows: 210px 210px 198px;
+    grid-template-areas: 
+        "caja1 caja2"
+        "caja3 caja4"
+        "caja5 caja5";
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+
+        .menu-grilla {
+            background-color: $secondaryColor;
+            color: $buttonColor;
+            font-size: 35px;
+            font-weight: 600;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                background-color: $secondaryColor;
+                color: $buttonColor;
+                text-decoration: none;
+                
+            }
+
+            .menu-grilla-numero {
+                color: $buttonColor;
+                font-weight: 400;
+                font-size: 24px;
+                background-color: $secondaryColor;
+                margin-right: 10px;
+            }
+  
+    }  
+
+    .menu-grilla:hover {
+        border: 5px solid $buttonColor;
+        cursor: pointer;
+    }
+
+}
 
 
+.caja1{
+    grid-area: caja1;
+}
+
+.caja2{
+    grid-area: caja2;
+}
+
+.caja3{
+    grid-area: caja3;
+}
+
+.caja4{
+    grid-area: caja4;
+}
+
+.caja5{
+    grid-area: caja5;
+}
 
 
- @-webkit-keyframes flip-horizontal-bottom{0%{-webkit-transform:rotateX(0);transform:rotateX(0)}100%{-webkit-transform:rotateX(-180deg);transform:rotateX(-180deg)}}@keyframes flip-horizontal-bottom{0%{-webkit-transform:rotateX(0);transform:rotateX(0)}100%{-webkit-transform:rotateX(-180deg);transform:rotateX(-180deg)}}
-
-
-    
+ @-webkit-keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}

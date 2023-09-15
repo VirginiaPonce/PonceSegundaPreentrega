@@ -1,40 +1,26 @@
 .foto-mas-texto {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 40px 0px 80px 0px;
 
-    .marco {
-        display: flex;
-        flex-direction: column;
-        width: 403px;
-        padding: 16px 32px;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        border-radius: 8px;
-        background: linear-gradient(135deg, $buttonColor 24.46%, $linkColor 84.39%);
-
         .foto-selfie {
-            width: 359px;
-            height: 363px;
             flex-shrink: 0;
-            border-radius: 4px;
-            background: url(<path-to-image>), #d3d3d3 50% / cover no-repeat;
-            box-shadow: 4px 4px 8px 0px $mainColor;  
             padding-left: 100px;
+            width: 400px;
+            height: 300px;
         }
 
     }
 
-}   
+ 
 
 .texto-principal {
     color: $fontColor;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: normal;
-    padding: 0px 32px 32px 32px;
-    text-align: left;
+    padding: 32px 32px 32px 32px;
+    text-align: center;
 
     .resaltado {
         color: $linkColor;
@@ -43,17 +29,11 @@
 
     }
 
-.imagen-universidad-todas {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 133px;
-
-    .imagen-universidad {
-        width: 234px;
-        height: 234px;
-        }
-
+.carousel-inner {
+    .carousel-item {
+        height: 450px;
     }
+}
 
 
 

@@ -1,5 +1,10 @@
 .form {
-    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: center;
+    margin-bottom: 150px;
 
     .form-label {
         color: $fontColor;
@@ -12,13 +17,33 @@
         font-size: 28px;
         font-weight: 500;
         background-color: $secondaryColor;
-        max-width: 664px;
+        width: 664px;
     }
 
     .option {
         background-color: $linkColor;
         color: $secondaryColor;
         font-weight: 500;
+        width: 364.8px;
     }
+
+    .form-boton-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        .form-boton {
+                background-color: $buttonColor;
+                color: $mainColor;
+                font-size: 30px;
+                font-weight: bold;
+                width: 314px;
+                height: 64px;
+                border-radius: 8px;
+            }
+
+    }
+    
 
 }

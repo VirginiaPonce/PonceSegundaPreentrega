@@ -1,0 +1,53 @@
+.misproyectos-container{
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin-bottom: 200px;
+    margin-left: 50px;
+ 
+    .misproyectos-titulo{
+        font-size: 35px;
+        color: $linkColor;
+        font-weight: 500;
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .misproyectos-imagenytexto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 42px;
+
+        .misproyectos-imagen{
+            width: 604px;
+            height: 325px;
+            margin-bottom: 20px;
+        }
+
+        .misproyectos-texto{
+            font-size: 28px;
+            color: $fontColor;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+    }
+    
+    .misproyectos-boton-container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .misproyectos-boton {
+            background-color: $buttonColor;
+            color: $secondaryColor;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 8px;
+
+        }
+    }
+}
